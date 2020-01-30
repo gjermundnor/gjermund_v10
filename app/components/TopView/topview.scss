@@ -1,0 +1,54 @@
+.topview-wrapper {
+  text-align: center;
+  margin-top: 130px;
+
+  .name {
+    font-weight: 300;
+    line-height: 70%;
+  }
+
+  .link {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 2px solid #ff971b;
+
+      &:hover {
+          color: #ff971b;
+      }
+  }
+
+  .big-text {
+    font-size: 40vw;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    line-height: 100%;
+
+    text-align: center;
+  	display: inline;
+  	background: url(http://i.imgur.com/2tqV8wZ.jpg) 0% 55% no-repeat;
+  	background-size: 140%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .topview-wrapper .big-text {
+    font-size: 510px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topview-wrapper {
+    margin-top: 60px;
+
+    .name {
+      line-height: 100%;
+    }
+
+    .big-text {
+      font-size: 50vw;
+    }
+  }
+}
